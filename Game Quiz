@@ -1,0 +1,92 @@
+# question 1
+i = 0
+math = input("""QUESTION 1:
+
+What is two squared? """)
+
+
+math = int(math)
+
+if math == 4:
+    print("""
+That is correct!""")
+    i += 1
+
+else:
+    print ("""
+That is Incorrect :( """)
+
+# question 2
+overlake_question = input("""QUESTION 2:
+
+What year was The Overlake School Founded? """)
+
+
+overlake_question = int(overlake_question)
+
+if overlake_question == 1967:
+    print("""
+That is correct!""")
+    i += 1
+
+else:
+    print ("""
+That is Incorrect :( """)
+
+# question 3
+the_godfather = input("""QUESTION 3:
+
+What actor took over as the godfather in the first movie? """)
+
+
+if the_godfather.lower()  == "al pacino":
+    print("""
+That is correct!""")
+    i += 1
+
+else:
+    print ("""
+That is Incorrect :( """)
+
+#question 4
+igor = input("""Question 4:
+
+What album won best rap album at the 2019 grammys? """)
+
+
+if igor.lower()  == "igor":
+    print("""
+That is correct!""")
+    i += 1
+
+else:
+    print ("""
+That is Incorrect :( """)
+
+#question 5
+steve_lacy = input("""Question 5:
+
+What artist made his most popular song in Garage Band on a Ipod Touch? """)
+
+
+if steve_lacy.lower() == "steve lacy":
+    print("""
+That is correct!""")
+    i += 1
+
+else:
+    print ("""
+That is Incorrect :( """)
+
+if i == 0:
+    print("You got 0% :(")
+elif i == 1:
+    print("You got 20% right :(")
+elif i == 2:
+    print("You got 40% right :( ")
+elif i == 3:
+    print("You got 60% right, better luck next time :( ")
+elif i == 4:
+    print ("you got 80% right, that is reasonableish :| ")
+elif i == 5:
+    print ("You got 100% right, nice job")
