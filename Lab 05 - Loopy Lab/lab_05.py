@@ -59,15 +59,12 @@ def draw_section_4():
         for column in range(30):
             x = 905  # Instead of zero, calculate the proper x location using 'column'
             y = 5 # Instead of zero, calculate the proper y location using 'row'
-            if row % 2 == 1:
+            if row % 2 == 1 and column % 2 == 1:
                 arcade.draw_rectangle_filled(x + 10 * column, y + 10 * row, 5, 5, arcade.color.BLACK)
+            elif row % 2 == 0 and column % 2 == 0:
+                    arcade.draw_rectangle_filled(x + 10 * column, y + 10 * row, 5, 5, arcade.csscolor.WHITE)
             else:
-                if column % 2 == 0:
-                    arcade.draw_rectangle_filled(x + 10 * column, y + 10 * row, 5, 5, arcade.color.WHITE)
-                else:
-                    arcade.draw_rectangle_filled(x + 10 * column, y + 10 * row, 5, 5, arcade.csscolor.BLACK)
-
-
+                arcade.draw_rectangle_filled(x + 10 * column, y + 10 * row, 5, 5, arcade.csscolor.BLACK)
 def draw_section_5():
     # Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead.
     for row in range(30):
