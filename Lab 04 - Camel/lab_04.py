@@ -45,7 +45,7 @@ drift adventure and make it out of the city!
             gas += random.randrange(1, 4)
             formulacrew += random.randrange(7, 15)
             if tireshop_chance == 5:
-                found_oasis = True
+                found_tireshop = True
             if found_tireshop:
                 gas *= 0
                 wheels *= 0
@@ -66,7 +66,7 @@ drift adventure and make it out of the city!
                 wheels *= 0
                 print("You have ", wheelsleft, "tire sets left.")
             if tireshop_chance == 5:
-                found_oasis = True
+                found_tireshop = True
             if found_tireshop:
                 gas *= 0
                 wheels *= 0
